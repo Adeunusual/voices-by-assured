@@ -71,15 +71,15 @@ const Card = () => {
     //--
     const handleCard = async (option) => {
         const cardClone = setClone(printRef.current);
-        // console.log(cardClone)
         //-----
         if (cardClone) printRef.current.parentElement.appendChild(cardClone);
         else return;
         // ---
         const digitalCard = cardClone.firstElementChild;
-
         const canvas = await html2canvas(digitalCard, { backgroundColor: null });
+        cardClone.style.display = 'none';
         cardClone.remove();
+
         const data = canvas.toDataURL('image/jpg');
         // ---
         switch (option) {
@@ -121,7 +121,7 @@ const Card = () => {
                         <div className="card-details">
                             <img className='card' src={dataGotten.card} alt="card" />
                             <div className="cardImg">
-                                {id === checkCardId ? <img src={cardImg} alt="" /> : <img src={avatar} alt="" />}
+                                {id === checkCardId ? <img src={cardImg} alt="" /> : <img src={avatar} alt="uploadedImg" />}
                             </div>
                         </div>
                     </div>

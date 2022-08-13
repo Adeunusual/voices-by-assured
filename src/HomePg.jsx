@@ -2,6 +2,7 @@ import { useRef, useState } from "react";
 import { FaImage, FaEdit, FaDownload } from 'react-icons/fa';
 import Banner from "./components/bannerSection";
 import CardSection from "./components/cardSection";
+import Footer from "./components/footer";
 import Header from './components/headerSection';
 import IconBox from "./components/hwSection";
 
@@ -24,6 +25,7 @@ const HomePg = () => {
                     </div>
                 </div>
                 <CardSection hide={showMobileNav} />
+                <Footer />
             </div>
         </>
     )

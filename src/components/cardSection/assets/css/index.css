@@ -87,6 +87,7 @@
     max-height: 100%;
     width: 100%;
     max-width: 100%;
+    border-radius: var(--border-radius-small);
 }
 
 
@@ -104,24 +105,21 @@
     position: relative;
 }
 
-/* DAvids Code========== Card resize */
-
-
 #card.resize {
     /* position: fixed;
-    z-index: -1;
-    overflow: auto;
     top: 0;
     left: 0; */
     height: 1080px;
     width: 1080px;
+    z-index: -1;
+    overflow: auto;
     /* pointer-events: none; */
 }
 
 #card.resize .cardImg {
     display: block;
     position: absolute;
-    border: 10px solid var(--white);
+    border: 8px solid var(--white);
 }
 
 .cardImg img {
@@ -138,10 +136,8 @@
     border-radius: 50%;
     width: 391px;
     height: 391px;
-
     top: 319px;
     left: 351px;
-
 }
 
 /* pObi Avatar */
@@ -149,25 +145,24 @@
     border-radius: 50%;
     width: 293px;
     height: 293px;
-
     top: 471px;
     left: 172px;
 }
 
 /* Atiku Avatar */
 .atikuCard .cardImg {
-    width: 209px;
-    height: 209px;
-
-    top: 335px;
-    left: 616px;
+    border-radius: 50%;
+    width: 225px;
+    height: 225px;
+    top: 610px;
+    left: 328px;
 }
 
 /* voiceNig Avatar */
 .voiceNig .cardImg {
+    border-radius: 50%;
     width: 145px;
     height: 145px;
-
     top: 571px;
     left: 591px;
 }
@@ -205,26 +200,3 @@
 }
 
 /* /@media */
-
-/* hidden */
-.uploadedImg {
-    width: 391px;
-    height: 391px;
-}
-
-.uploadedImg img {
-    width: 100%;
-}
-
-.hiddenCard {
-    position: relative;
-}
-
-.hiddenCard .Card1080 {
-    width: 100%;
-}
-
-.hiddenCard .uploadedImg img {
-    width: 100%;
-    border-radius: 50%;
-}
