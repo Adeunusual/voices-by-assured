@@ -104,6 +104,75 @@
     position: relative;
 }
 
+/* DAvids Code========== Card resize */
+
+
+#card.resize {
+    /* position: fixed;
+    z-index: -1;
+    overflow: auto;
+    top: 0;
+    left: 0; */
+    height: 1080px;
+    width: 1080px;
+    /* pointer-events: none; */
+}
+
+#card.resize .cardImg {
+    display: block;
+    position: absolute;
+    border: 10px solid var(--white);
+}
+
+.cardImg img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.cardImg {
+    display: none;
+}
+
+/* Tinubu Avatar */
+.tinubuCard .cardImg {
+    border-radius: 50%;
+    width: 391px;
+    height: 391px;
+
+    top: 319px;
+    left: 351px;
+
+}
+
+/* pObi Avatar */
+.peterObiCard .cardImg {
+    border-radius: 50%;
+    width: 293px;
+    height: 293px;
+
+    top: 471px;
+    left: 172px;
+}
+
+/* Atiku Avatar */
+.atikuCard .cardImg {
+    width: 209px;
+    height: 209px;
+
+    top: 335px;
+    left: 616px;
+}
+
+/* voiceNig Avatar */
+.voiceNig .cardImg {
+    width: 145px;
+    height: 145px;
+
+    top: 571px;
+    left: 591px;
+}
+
+/* ------------------------------------------------------ */
 /* @media */
 @media only screen and (min-width:640px) {
     .card-inner-w {
@@ -153,16 +222,6 @@
 
 .hiddenCard .Card1080 {
     width: 100%;
-}
-
-.hiddenCard .uploadedImg {
-    border: 2px solid red;
-    border-radius: 50%;
-    width: 391px;
-    height: 391px;
-    position: absolute;
-    top: 319px;
-    left: 351px;
 }
 
 .hiddenCard .uploadedImg img {

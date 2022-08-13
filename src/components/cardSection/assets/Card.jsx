@@ -10,7 +10,17 @@ import RenderPopUp from './RenderPopUp';
 const Card = () => {
     // state
     const [checkCardId, setCheckCardId] = useState(-1)
+    //-----
+    //--- function to set clone and its style
+    const setClone = (card) => {
+        const clone = card.cloneNode(true);
+        // change the card style
+        clone.classList.add('resize');
+        //-- set the cardClone state
+        return clone;
+    }
 
+    //-----
     //handle Card click
     const handleCardClick = (id) => {
         setCardImg(avatar);
@@ -58,10 +68,18 @@ const Card = () => {
     //Handle card Download & share
     const printRef = useRef();
 
+    //--
     const handleCard = async (option) => {
+        const cardClone = setClone(printRef.current);
+        // console.log(cardClone)
+        //-----
+        if (cardClone) printRef.current.parentElement.appendChild(cardClone);
+        else return;
         // ---
-        const digitalCard = printRef.current;
+        const digitalCard = cardClone.firstElementChild;
+
         const canvas = await html2canvas(digitalCard, { backgroundColor: null });
+        cardClone.remove();
         const data = canvas.toDataURL('image/jpg');
         // ---
         switch (option) {
@@ -107,7 +125,7 @@ const Card = () => {
                             </div>
                         </div>
                     </div>
-                </div >
+                </div>
             ))
             }
 

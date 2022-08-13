@@ -4,7 +4,7 @@ import atiku from '../assets/images/Atiku.jpg';
 
 import voteNig from '../assets/images/VoteNigeria.jpg';
 
-import TinubuCard from '../assets/images/TinubuCard.jpg'
+import TinubuCard from '../assets/images/TinubuBg.jpg'
 import PeterObiCard from '../assets/images/PeterObiCard.jpg'
 import AtikuCard from '../assets/images/AtikuCard.jpg'
 import vNaijaCard from '../assets/images/vNaijaCard.jpg'
