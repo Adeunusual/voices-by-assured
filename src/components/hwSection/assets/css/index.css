@@ -1,0 +1,107 @@
+/* cardInfo-section */
+.cardInfo-section {
+    padding: 32px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardInfo-section .card-info {
+    width: 100%;
+    max-width: 1300px;
+    margin: auto;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(3, auto);
+    padding: 0 15px;
+}
+
+.card-icon {
+    font-size: 1.25rem;
+    width: 70px;
+    height: 70px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-block-end: 1.5rem;
+    border-radius: 50%;
+    background-image: linear-gradient(var(--gradient-angle), var(--gradient-first), var(--gradient-second), var(--gradient-third));
+}
+
+.cardInfo-section .card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    padding: 15px;
+    color: var(--color-gray-10);
+    border-radius: var(--border-radius-small);
+    border: 1px solid var(--border-color);
+}
+
+.cardInfo-section .card h3,
+.cardInfo-section .card p {
+    font-family: var(--GT-Walsheim);
+}
+
+.cardInfo-section .card h3 {
+    font-size: 0.725em;
+    font-weight: var(--font-weight-normalBold);
+    color: var(--color-gray-10);
+    line-height: 1;
+    letter-spacing: 0;
+}
+
+.cardInfo-section .card p {
+    display: none;
+}
+
+@media only screen and (max-width:460px) {
+    .card-icon {
+        font-size: 1rem;
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media only screen and (min-width:640px) {
+    .cardInfo-section .card-info {
+        padding: 0 30px;
+    }
+}
+
+@media (min-width: 960px) {
+    .cardInfo-section {
+        padding: 64px 0 16px 0;
+    }
+
+    .cardInfo-section .card-info {
+        padding: 0 40px;
+        /* margin: 0 26px; */
+        gap: 25px;
+    }
+
+    .cardInfo-section .card {
+        width: 100%;
+        padding: 48px;
+    }
+
+    .cardInfo-section .card h3 {
+        font-size: 20px;
+    }
+
+    .cardInfo-section .card p {
+        font-size: 1.125rem;
+        font-weight: var(--font-weight-light);
+        line-height: 1.5;
+
+        display: block;
+        margin-block-start: 20px;
+        color: var(--color-gray-40);
+    }
+
+}
+
+/* media */

@@ -1,0 +1,282 @@
+.popUp,
+.useCard--popUp {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .7);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--GT-Walsheim);
+
+    overflow-y: hidden;
+    overflow: auto;
+}
+
+.popUpInner,
+.useCard--popUp .popUp--inner {
+    position: relative;
+    padding: 16px;
+    width: 100%;
+    max-width: 100%;
+
+    border-radius: var(--border-radius-large);
+    background-color: #202020;
+
+    margin: 16px;
+}
+
+.popUp-close {
+    position: absolute;
+    top: -24px;
+    right: 0px;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.popUpInner .heading h3 {
+    color: var(--color-gray-10);
+    font-size: 28px;
+    font-weight: var(--font-weight-normalBold);
+    line-height: 1;
+    letter-spacing: -0.75;
+    margin: 0 0 20px 0;
+}
+
+.popUpInner .heading p {
+    font-size: 1rem;
+    font-weight: var(--font-weight-regular);
+    color: #CDCDCD;
+    margin: 20px 0
+}
+
+.form-block-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-block-flex>* {
+    width: 46%;
+}
+
+.form-block {
+    margin: 24px 0 0;
+}
+
+.labelStyle {
+    color: var(--white);
+    margin: 0 0 5px;
+    font-size: 14px;
+    display: block;
+}
+
+.inputStyle {
+    width: 100%;
+    background-color: rgba(255, 255, 255, .05) !important;
+    color: #fff !important;
+
+    font-size: 0.95rem;
+    font-weight: var(--font-weight-normalBold);
+    font-family: var(--GT-Walsheim);
+    height: 40px;
+    padding: 0 16px;
+
+    outline: 0;
+    border: 0;
+    border-radius: var(--border-radius-small);
+    transition: .9 ease-in;
+}
+
+#upload-img-border {
+    border-width: 2px;
+    border-style: dashed;
+    border-color: var(--btn-shadow-color);
+    border-radius: var(--border-radius-small);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    padding: 24px;
+}
+
+#upload-img-border .profile {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--white);
+    display: none;
+}
+
+.show_preview {
+    display: block !important;
+}
+
+#upload-img-border .profile img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+#file-inputTag {
+    display: none;
+}
+
+#upload-img-border .form-label {
+    color: var(--color-gray-40);
+    margin: 12px 0 16px 0;
+    font-family: var(--font-weight-normalBold);
+    font-size: 0.75rem;
+    line-height: 1.5;
+    letter-spacing: normal;
+}
+
+.form-custom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--btn-shadow-color);
+    padding: 8px 12px;
+    border-radius: var(--border-radius-small);
+}
+
+.upload-icon {
+    margin-inline-end: 4px;
+    font-size: 1rem;
+    width: 16px;
+    height: 16px;
+    line-height: 1;
+    color: #FFF;
+}
+
+.upload-txt {
+    color: var(--white);
+    margin-inline-start: 8px;
+    font-size: 0.875rem;
+}
+
+.useCard--popUp .popUp--inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.useCard--popUp .btns {
+    width: 300px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.useCard--popUp .btns button:not(:last-child) {
+    width: 100%;
+    cursor: pointer;
+}
+
+
+.useCard--popUp .popUp--inner .download,
+.useCard--popUp .popUp--inner .share {
+    margin-top: 10px;
+    height: 48px;
+    font-size: 1rem;
+    padding: 0 24px;
+    border: 0;
+    color: #FFF !important;
+    border-radius: var(--border-radius-small);
+    font-family: var(--GT-Walsheim);
+}
+
+.useCard--popUp .popUp--inner .download {
+    background-color: #e44b4b;
+}
+
+.useCard--popUp .popUp--inner .share {
+    background-color: var(--btn-shadow-color);
+}
+
+.useCard--popUp .btns button.edit {
+    font-size: 0.875rem;
+    height: 40px;
+    padding: 0 20px;
+    background-color: transparent;
+    color: var(--white);
+    margin-top: 10px;
+    border-radius: var(--border-radius-small);
+    border: 1px solid rgba(255, 255, 255, .08);
+    font-family: var(--GT-Walsheim);
+}
+
+.laterImg {
+    height: 100%;
+    max-height: 100%;
+    width: 100%;
+    max-width: 100%;
+    padding: 15px;
+    background-color: #202020;
+    border-radius: var(--border-radius-small);
+    border: 1px solid var(--btn-shadow-color);
+}
+
+.laterImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.create-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-block-start: 16px;
+}
+
+.create-btn {
+    width: 100%;
+    max-width: 100%;
+    height: 50px;
+    color: var(--white);
+    border: 0;
+    border-radius: 9px;
+}
+
+/* rn */
+.custom-btn {
+    background-color: var(--color-primary);
+    background-image: linear-gradient(var(--gradient-angle), var(--gradient-first), var(--gradient-second), var(--gradient-third));
+    font-family: var(--GT-Walsheim);
+}
+
+/* @media */
+@media only screen and (min-width:640px) {
+
+    .popUpInner,
+    .useCard--popUp .popUp--inner {
+        padding: 24px;
+        margin: auto 30px;
+    }
+}
+
+@media only screen and (min-width:960px) {
+
+    .popUpInner,
+    .useCard--popUp .popUp--inner {
+        width: 100%;
+        max-width: 368px;
+        margin: auto;
+    }
+
+    .popUpInner label.imageLabel {
+        padding: 56px;
+    }
+}

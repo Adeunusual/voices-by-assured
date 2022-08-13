@@ -1,0 +1,171 @@
+/************************ candidates */
+.card-wrapper {
+    max-width: 1300px;
+    padding: 24px 0;
+    margin: 0 auto;
+    font-family: var(--GT-Walsheim);
+}
+
+.card-inner-w {
+    padding: 0 15px;
+}
+
+.card-wrapper .heading h2 {
+    color: var(--color-gray-10);
+    font-size: 28px;
+    font-weight: var(--font-weight-normalBold);
+    line-height: 1;
+    letter-spacing: -0.75;
+}
+
+.cardComponent {
+    display: grid;
+    grid-gap: 8px 0;
+    margin-top: 24px;
+}
+
+.card-border {
+    padding: 16px;
+    border-radius: var(--border-radius-small);
+    border: 1px solid var(--btn-shadow-color);
+
+    display: grid;
+    grid-gap: 16px;
+}
+
+.candidateDetails {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.candidateDetails div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-gray-10);
+}
+
+.candidate-imgWrapper {
+    position: relative;
+    margin-inline-end: 8px;
+}
+
+
+.candidate-imgWrapper .icon {
+    font-size: 10px;
+    position: absolute;
+    bottom: -3px;
+    right: 0;
+    color: var(--color-info) !important;
+}
+
+.candidateDetails img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+.candidateDetails .candidate-name {
+    font-size: 0.875rem;
+}
+
+.candidateDetails .icon-w {
+    width: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.candidateDetails .icon {
+    font-size: 11px;
+    color: var(--color-gray-10);
+}
+
+.card-border .card {
+    height: 100%;
+    max-height: 100%;
+    width: 100%;
+    max-width: 100%;
+}
+
+
+.card-detailsImg {
+    width: 100%;
+    border-radius: var(--border-radius-small);
+}
+
+.card-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    position: relative;
+}
+
+/* @media */
+@media only screen and (min-width:640px) {
+    .card-inner-w {
+        padding: 0 30px;
+    }
+
+    .cardComponent {
+        grid-gap: 8px 8px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media only screen and (min-width:960px) {
+    .card-wrapper {
+        max-width: 1300px;
+        padding: 48px 0 80px 0;
+        margin: 0 auto;
+        font-family: var(--GT-Walsheim);
+    }
+
+    .card-inner-w {
+        padding: 0 40px;
+    }
+
+    .cardComponent {
+        grid-gap: 24px 24px;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+}
+
+/* /@media */
+
+/* hidden */
+.uploadedImg {
+    width: 391px;
+    height: 391px;
+}
+
+.uploadedImg img {
+    width: 100%;
+}
+
+.hiddenCard {
+    position: relative;
+}
+
+.hiddenCard .Card1080 {
+    width: 100%;
+}
+
+.hiddenCard .uploadedImg {
+    border: 2px solid red;
+    border-radius: 50%;
+    width: 391px;
+    height: 391px;
+    position: absolute;
+    top: 319px;
+    left: 351px;
+}
+
+.hiddenCard .uploadedImg img {
+    width: 100%;
+    border-radius: 50%;
+}

@@ -1,0 +1,128 @@
+.banner {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.05) !important;
+
+    padding-inline: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+    display: flow-root;
+
+    position: relative;
+}
+
+.banner img {
+    width: 1175px;
+    height: 326px;
+    max-width: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 11px;
+}
+
+.bannerTxt {
+    max-width: 1376px;
+    margin: 0 auto;
+    padding-block: 32px;
+    position: relative;
+    font-family: var(--GT-Walsheim);
+}
+
+
+
+.bannerTxt h1 {
+    font-size: 32px;
+    font-weight: 700;
+    font-weight: var(--font-weight-normalBold);
+
+    line-height: 1.2;
+    letter-spacing: -0.75px;
+    margin: 0 0 16px 0;
+    color: var(--color-gray-10);
+}
+
+.bannerTxt p {
+    width: 100%;
+    font-size: 1rem;
+    font-weight: var(--font-weight-regular);
+    margin-block: 20px;
+    color: #CDCDCD;
+}
+
+.bannerTxt-btn {
+    color: #FFFFFF;
+
+    border-radius: var(--border-radius-large);
+    background-color: var(--color-primary);
+    background-image: linear-gradient(var(--gradient-angle), var(--gradient-first), var(--gradient-second), var(--gradient-third));
+
+    padding: 15px 24px;
+    margin-block-start: 24px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    font-size: 0.875rem;
+    line-height: 1;
+    letter-spacing: normal;
+    text-decoration: none;
+    transition: all 0.2s ease 0s;
+    cursor: pointer;
+}
+
+.bannerTxt-btn:hover {
+    opacity: .9;
+}
+
+@media only screen and (min-width:640px) {
+    .banner {
+        padding-inline-start: 26px;
+    }
+}
+
+@media only screen and (min-width:960px) {
+    .banner {
+        padding-inline: 40px;
+    }
+
+    .banner img {
+        height: 476px;
+        width: 1714px;
+    }
+
+    .bannerTxt {
+        padding-block: 80px;
+        padding-inline-start: 0;
+    }
+
+    .bannerTxt h1 {
+        font-size: 56px;
+        line-height: 1;
+        margin: 0 0 24px 0;
+    }
+
+    .bannerTxt p {
+        width: 576px;
+        font-size: 1.5rem;
+        line-height: 1.5;
+    }
+
+    .bannerTxt-btn {
+        padding: 20px 56px;
+        margin-block-start: 24px;
+    }
+
+
+}
+
+@media only screen and (min-width:1400px) {
+    .bannerTxt {
+        max-width: 1390px;
+    }
+}

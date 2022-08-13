@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.d-none {
+  opacity: 0 !important;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+/* NeueMachina Font */
+@font-face {
+  font-family: NeueMachina;
+  src: url(./assets/fonts/NeueMachina-Light.otf);
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: NeueMachina;
+  src: url(./assets/fonts/NeueMachina-Regular.otf);
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: NeueMachina;
+  src: url(./assets/fonts/NeueMachina-Ultrabold.otf);
+  font-style: normal;
+  font-weight: 900;
+}
+
+/* /NeueMachina Font */
+
+/* GT Walsheim */
+@font-face {
+  font-family: GTWalsheim;
+  src: url(./assets/fonts/GT-Walsheim-Thin.otf);
+  font-style: normal;
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: GTWalsheim;
+  src: url(./assets/fonts/GTWalsheim-Regular.otf);
+  font-style: normal;
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: GTWalsheim;
+  src: url(./assets/fonts/GTWalsheim-Medium.otf);
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: GTWalsheim;
+  src: url(./assets/fonts/GT\ Walsheim\ Bold.woff2.ttf);
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: GTWalsheim;
+  src: url(./assets/fonts/GT-Walsheim-Ultra-Bold.otf);
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: GTWalsheim;
+  src: url(./assets/fonts/GT-Walsheim-Ultra-Light.otf);
+  font-style: normal;
+  font-weight: 700;
+}
+
+/* /GT Walsheim */
+
+/* root */
+:root {
+  --GT-Walsheim: GTWalsheim;
+  --NeueMachina: NeueMachina;
+  --font-weight-light: 100;
+  --font-weight-regular: 200;
+  --font-weight-normal: 300;
+  --font-weight-normalBold: 400;
+  --font-weight-semibold: 500;
+  --font-weight-bold: 700;
+  --heading-font-weight: 700;
+  --heading-font-typeface: var(--font-family-secondary);
+  --heading-font-style: normal;
+  --heading-font-spacing: normal;
+  --heading-color-text: var(--color-gray-100);
+  --border-radius-small: 9px;
+  --border-radius-medium: 12px;
+  --border-radius-large: 15px;
+  --border-color: rgba(131, 131, 131, 0.25);
+  --white: #FFFFFF;
+  --black: #000000;
+  --gradient-first: #ff5c88;
+  --gradient-second: #ff0062;
+  --gradient-third: #ff5722;
+  --gradient-angle: 124deg;
+  --color-primary-10: #ffe6ef;
+  --color-primary-20: #ffaccc;
+  --color-primary-30: #ff73a9;
+  --color-primary-40: #ff3985;
+  --color-primary: #ff0062;
+  --color-primary-60: #d10050;
+  --color-primary-60: #a10842;
+  --color-primary-70: #a3003f;
+  --color-primary-80: #75002d;
+  --color-primary-90: #47001b;
+  --color-gray-10: #f9f9f9;
+  --color-gray-20: #eaeaea;
+  --color-gray-30: #dbdbdb;
+  --color-gray-40: #cdcdcd;
+  --color-gray-50: #bebebe;
+  --color-gray-60: #9c9c9c;
+  --color-gray-70: #7a7a7a;
+  --color-gray-80: #575757;
+  --color-gray-90: #353535;
+  --color-gray-92: #252525;
+  --color-gray-95: #1F1F1F;
+  --color-gray-100: #131313;
+  --color-info: #03a5d6;
+  --transition-02: .2s ease;
+  --btn-shadow-color: rgba(255, 255, 255, 0.15);
+  --border-color: rgba(131, 131, 131, 0.25);
+  --line-height-1: 1;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home--wrapper {
+  max-width: 100%;
+  background-color: var(--color-gray-100);
+}
+
+/* /root */
