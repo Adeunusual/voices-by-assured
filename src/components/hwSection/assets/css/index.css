@@ -4,6 +4,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .cardInfo-section .card-info {
@@ -44,6 +45,11 @@
 .cardInfo-section .card h3,
 .cardInfo-section .card p {
     font-family: var(--GT-Walsheim);
+}
+
+#light .cardInfo-section .card h3,
+#light .cardInfo-section .card p {
+    color: var(--color-gray-100);
 }
 
 .cardInfo-section .card h3 {

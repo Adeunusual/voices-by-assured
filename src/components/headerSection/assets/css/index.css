@@ -2,6 +2,10 @@
     background-color: var(--color-gray-100);
 }
 
+#light .header-wrapper {
+    background-color: var(--white);
+}
+
 /* Top Nav */
 .top--nav {
     width: 100%;
@@ -126,6 +130,18 @@
     color: var(--color-gray-10);
 }
 
+.navbar-btn-icon .icon:hover {
+    color: var(--color-gray-50);
+}
+
+#light .navbar-btn-icon .icon {
+    color: var(--color-gray-100);
+}
+
+#light .navbar-btn-icon .icon:hover {
+    color: var(--color-primary);
+}
+
 .header_mobile-logo {
     max-width: 100px;
     width: 100%;
@@ -170,8 +186,16 @@
     margin-inline-end: 1rem;
 }
 
+#light .nav-items .nav-menu li a {
+    color: var(--color-gray-100);
+}
+
 .nav-items .nav-menu li a:hover {
     color: var(--color-gray-50);
+}
+
+#light .nav-items .nav-menu li a:hover {
+    color: var(--color-gray-70);
 }
 
 /* nav logo */
@@ -182,7 +206,8 @@
 }
 
 .navbar .nav-logo img {
-    width: 212px;
+    width: 210px;
+    height: 45px;
 }
 
 /* nav search/AssuredBtn */
@@ -190,7 +215,6 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-
 }
 
 .search-assured .search-btn {
@@ -209,7 +233,12 @@
     transition: var(--transition-02);
 }
 
-.navbar .search-btn svg:hover {
+#light .navbar .search-btn svg {
+    color: var(--color-gray-100);
+}
+
+.navbar .search-btn svg:hover,
+#light .navbar .search-btn svg:hover {
     color: var(--color-gray-50);
 }
 
@@ -230,6 +259,11 @@
     background-color: var(--color-gray-95);
 }
 
+#light .navbar .search-btn .search-input {
+    color: var(--color-gray-100);
+    background-color: var(--color-gray-30);
+}
+
 .display_input {
     opacity: 1 !important;
     transform: none;
@@ -245,6 +279,10 @@
     outline: 0;
 }
 
+#light .assured-btn {
+    background-color: var(--color-gray-30);
+}
+
 .assured-btn a {
     font-size: 0.875rem;
     font-family: var(--GT-Walsheim) !important;
@@ -254,11 +292,21 @@
     text-decoration: none;
 }
 
+#light .assured-btn a {
+    color: var(--color-gray-100);
+}
+
 /* mobileNav */
 .mobileNav {
     width: 100%;
     height: 100%;
     color: var(--color-gray-10);
+
+}
+
+#light .mobileNav {
+    color: var(--color-gray-100);
+    background-color: var(--white);
 }
 
 .close-icon {
@@ -272,13 +320,24 @@
     outline: 1px solid var(--btn-shadow-color);
 }
 
+#light .close-icon {
+    outline: 1px solid var(--color-gray-30);
+}
+
 .close-icon svg {
     width: 70%;
 }
 
+#light .close-icon svg {
+    color: var(--black);
+}
+
+#light .close-icon:hover svg {
+    color: var(--white) !important;
+}
+
 .close-icon:hover {
-    color: var(--nav-secondary-color);
-    background-color: var(--color-primary-60);
+    background-color: var(--color-primary-30);
 }
 
 .mobileNav .heading {
@@ -290,6 +349,11 @@
     border-bottom: 1px solid var(--btn-shadow-color);
 }
 
+#light .mobileNav .heading {
+    background-color: var(--white);
+    border-bottom: 1px solid var(--color-gray-20);
+}
+
 .mobileNav .heading h2 {
     color: var(--color-gray-10);
     font-size: 20px;
@@ -299,9 +363,18 @@
     font-weight: var(--font-weight-normalBold, 400);
 }
 
+#light .mobileNav .heading h2 {
+    color: var(--color-gray-100);
+}
+
 .mobileNav .content {
     padding: 25px;
     background-color: var(--color-gray-100);
+}
+
+#light .mobileNav .content {
+    padding: 25px;
+    background-color: var(--white);
 }
 
 .mobileNav .content>div:not(:first-child) {
@@ -313,22 +386,31 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 6px 10px;
+    padding: 8px 10px;
 
     background-color: var(--color-gray-95);
 
     border-radius: var(--border-radius-small);
 }
 
-.mobileNav--input:hover {
+#light .mobileNav--input {
+    background-color: var(--color-gray-20);
+}
+
+.mobileNav--input:hover,
+#light .mobileNav--input:hover {
     outline: 1px solid var(--btn-shadow-color);
 }
 
 .mobileNav--input svg {
-    color: var(--nav-secondary-color);
+    color: var(--color-gray-30);
     background: transparent;
 
     margin-inline-end: 1rem;
+}
+
+#light .mobileNav--input svg {
+    color: var(--color-gray-50);
 }
 
 .mobileNav--input input {
@@ -342,6 +424,10 @@
     letter-spacing: 0;
     font-family: var(--GT-Walsheim);
     font-weight: var(--font-weight-normalBold);
+}
+
+#light .mobileNav--input input {
+    color: var(--color-gray-100);
 }
 
 .mobileNav--input input::placeholder {
@@ -366,7 +452,7 @@
 
 .mobileNav .content ul li a {
     font-size: 1rem;
-    font-weight: var(--font-weight-light);
+    font-weight: 100;
     line-height: var(--line-height-1);
 
     display: flex;
@@ -375,6 +461,10 @@
     text-decoration: none;
 
     color: var(--color-gray-10);
+}
+
+#light .mobileNav .content ul li a {
+    color: var(--color-gray-100);
 }
 
 .mobileNav .content ul li a svg {

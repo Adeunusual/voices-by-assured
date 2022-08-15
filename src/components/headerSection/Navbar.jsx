@@ -1,12 +1,20 @@
 
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 import { FaBars } from 'react-icons/fa';
 import mobileLogo from './assets/images/logo-mobile.svg';
 import logo from './assets/images/logo_light.svg'
+import logoPink from './assets/images/mobilePinkLogo.svg'
 import Button from './Button';
 import MobileView from './MobileView';
 
 const Navbar = ({ navbar, showNavbar, mobileNav }) => {
+
+    const [NavLogo, setNavLogo] = useState(false);
+    const handleChangelogo = () => {
+        setNavLogo((prevState) => {
+            return !prevState;
+        });
+    };
 
     // search input
     const searchRef = useRef();
@@ -31,7 +39,22 @@ const Navbar = ({ navbar, showNavbar, mobileNav }) => {
 
                     <div className="nav-logo">
                         <span className='desktop-logo'>
-                            <img src={logo} alt="desktop_logo" />
+                            {/* <img src={logo} alt="desktop_logo" /> */}
+                            {NavLogo ? (
+                                <img
+                                    className="active"
+                                    src={logo}
+                                    alt="light_logo"
+                                    onClick={() => handleChangelogo()}
+                                />
+                            ) : (
+                                <img
+                                    className="inactive"
+                                    src={logoPink}
+                                    alt="pink_logo"
+                                    onClick={() => handleChangelogo()}
+                                />
+                            )}
                         </span>
                     </div>
 
