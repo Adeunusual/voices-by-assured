@@ -68,17 +68,28 @@ const Card = () => {
     //Handle card Download & share
     const printRef = useRef();
 
+    const setSize = (width = null, height = null) => {
+        printRef.current.style.width = width;
+        printRef.current.style.height = height;
+    }
     //--
     const handleCard = async (option) => {
+        const { width, height } = printRef.current.getBoundingClientRect()
         const cardClone = setClone(printRef.current);
+        setSize(width + 'px', height + 'px');
+
+        // ---
+        const parent = document.createElement("div");
+        parent.classList.add('styleParent');
+        parent.appendChild(cardClone)
         //-----
-        if (cardClone) printRef.current.parentElement.appendChild(cardClone);
+        if (cardClone) printRef.current.parentElement.appendChild(parent);
         else return;
         // ---
         const digitalCard = cardClone.firstElementChild;
         const canvas = await html2canvas(digitalCard, { backgroundColor: null });
-        cardClone.style.display = 'none';
-        cardClone.remove();
+        // parent.remove();
+        setSize();
 
         const data = canvas.toDataURL('image/jpg');
         // ---

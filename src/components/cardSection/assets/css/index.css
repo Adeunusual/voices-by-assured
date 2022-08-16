@@ -118,15 +118,20 @@
     position: relative;
 }
 
-#card.resize {
-    /* position: fixed;
+.styleParent {
+    position: fixed;
     top: 0;
-    left: 0; */
+    left: 0;
     height: 1080px;
     width: 1080px;
-    z-index: -1;
+    z-index: -1000000;
+    /* visibility: hidden; */
     overflow: auto;
-    /* pointer-events: none; */
+    pointer-events: none;
+}
+
+#card.resize {
+    position: relative;
 }
 
 #card.resize .cardImg {

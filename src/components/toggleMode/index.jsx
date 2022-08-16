@@ -1,7 +1,5 @@
-import React, { useState } from 'react'
+const ToggleMode = ({ toggleTheme, theme, setModeIcon, modeIcon }) => {
 
-const ToggleMode = ({ toggleTheme, theme }) => {
-    const [modeIcon, setModeIcon] = useState(false);
 
     const handleChangeIcon = () => {
         setModeIcon((prevState) => {

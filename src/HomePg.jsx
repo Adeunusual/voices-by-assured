@@ -7,7 +7,7 @@ import Header from './components/headerSection';
 import IconBox from "./components/hwSection";
 
 
-const HomePg = () => {
+const HomePg = ({ setModeIcon, modeIcon }) => {
 
     const navbar = useRef();
     const [showMobileNav, setMobile] = useState(false)
@@ -15,7 +15,7 @@ const HomePg = () => {
 
     return (
         <>
-            <Header mobileNav={showMobileNav} navbar={navbar} showNavbar={showNavbar} />
+            <Header mobileNav={showMobileNav} navbar={navbar} showNavbar={showNavbar} modeIcon={modeIcon} setModeIcon={setModeIcon} />
             <div className="home--wrapper">
                 <Banner hide={showMobileNav} />
                 <div className="cardInfo-section">
@@ -28,13 +28,6 @@ const HomePg = () => {
                 <CardSection hide={showMobileNav} />
                 <Footer hide={showMobileNav} />
             </div>
-            {/* <div class="darkmode-trigger uk-position-bottom-right uk-position-small uk-position-fixed uk-box-shadow-large uk-radius-circle" data-darkmode-toggle="">
-                <label class="switch">
-                    <span class="sr-only">Dark mode toggle</span>
-                    <input type="checkbox" />
-                    <span class="slider"></span>
-                </label>
-            </div> */}
         </>
     )
 }
