@@ -153,11 +153,15 @@ footer small {
 }
 
 #light .footer-icons li a {
-    color: #cdcdcd;
+    color: var(--color-gray-70);
 }
 
 .footer-icons li a:hover {
     color: rgba(255, 255, 255, .50);
+}
+
+#light .footer-icons li a:hover {
+    color: var(--color-gray-80);
 }
 
 .footer-icons li a {
@@ -182,9 +186,11 @@ footer small {
     align-items: center;
     flex-direction: column;
     gap: 24px;
-
 }
 
+.fb-txt a {
+    color: red;
+}
 
 @media only screen and (min-width:680px) {
     footer {
@@ -197,13 +203,21 @@ footer small {
 }
 
 .assuredDonate {
-    color: var(--color-gray-10);
-    font-size: 1rem;
-    font-weight: 700;
     display: flex;
     justify-content: center;
     align-items: center;
+}
 
+.assuredDonate p,
+.assuredDonate p a {
+    color: var(--color-gray-10);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+#light .assuredDonate p,
+#light .assuredDonate p a {
+    color: var(--color-gray-100);
 }
 
 .assuredDonate>* {
@@ -211,7 +225,16 @@ footer small {
 }
 
 .copyright {
+    font-weight: 200;
     color: #CDCDCD;
+}
+
+#light .copyright {
+    color: var(--color-gray-60)
+}
+
+#light .copyright span {
+    color: var(--color-gray-100);
 }
 
 @media only screen and (min-width:960px) {

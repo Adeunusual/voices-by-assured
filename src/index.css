@@ -193,6 +193,10 @@
   align-items: center;
 }
 
+.toggle-wrapper img {
+  width: 18px
+}
+
 .toggle-sun:hover {
   background-color: var(--white);
 }

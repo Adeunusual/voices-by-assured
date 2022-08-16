@@ -118,6 +118,24 @@
     align-items: center;
 }
 
+.navbar-wrapper {
+    transform: translateY(0px);
+}
+
+.navbar-wrapper.fixed {
+    width: 100%;
+    transition: .3s ease-in-out;
+    transform: translateY(0px);
+    position: fixed;
+    top: 0;
+    background-color: var(--color-gray-100);
+    z-index: 1000;
+}
+
+#light .navbar-wrapper.fixed {
+    background-color: var(--white);
+}
+
 /*  Btn Icon */
 .navbar-btn-icon {
     background: transparent;

@@ -1,5 +1,5 @@
 
-import { useRef } from 'react';
+// import { useRef } from 'react';
 import { FaBars } from 'react-icons/fa';
 import mobileLogo from './assets/images/logo-mobile.svg';
 import logo from './assets/images/logo_light.svg'
@@ -9,9 +9,11 @@ import MobileView from './MobileView';
 
 const Navbar = ({ navbar, showNavbar, mobileNav, modeIcon }) => {
 
+
     // search input
-    const searchRef = useRef();
-    const showSearch = () => searchRef.current.classList.toggle("display_input");
+    // const searchRef = useRef();
+    // const showSearch = () => searchRef.current.classList.toggle("display_input");
+
     return (
         <>
             <div className='header'>
@@ -50,10 +52,11 @@ const Navbar = ({ navbar, showNavbar, mobileNav, modeIcon }) => {
                     </div>
 
                     <div className="search-assured">
-                        <button className='search-btn'>
+                        {/* search Icon */}
+                        {/* <button className='search-btn'>
                             <input ref={searchRef} type="text" placeholder='Search card of the person you support...' className='search-input' />
                             <svg onClick={showSearch} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-                        </button>
+                        </button> */}
                         <Button text='Assured.com' link='https://useassured.com/' styleClass='assured-btn' />
                     </div>
                     <MobileView showBar={showNavbar} />

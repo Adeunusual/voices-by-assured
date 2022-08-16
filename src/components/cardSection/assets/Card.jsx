@@ -57,7 +57,7 @@ const Card = () => {
         const link = document.createElement('a');
         // ---
         link.href = data;
-        link.download = 'image.jpg';
+        link.download = 'Assured Card.jpg';
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);

@@ -25,14 +25,14 @@ const Footer = ({ hide }) => {
             </footer>
             <div className="footer-bottom">
                 <div className="footer-icons">
-                    {routes.filter(route => route.isIcon === false).map((route, i) => <li key={i}><a href={route.route}>{route.icon}</a></li>)}
+                    {routes.filter(route => route.isIcon === false).map((route, i) => <li key={i}><a href={route.route} target="_blank" rel="noreferrer" >{route.icon}</a></li>)}
                 </div>
                 <div className="fb-txt">
                     <div className="assuredDonate">
-                        <p>Assured.com</p>
+                        <p><a href="https://useassured.com/" target="_blank" rel="noreferrer">Assured.com</a></p>
                         <p>Donate to this Course</p>
                     </div>
-                    <p className='copyright'>© Voices by Asssured, All rights reserved.</p>
+                    <p className='copyright'>© Voices by <span>Asssured</span>, All rights reserved.</p>
                 </div>
             </div>
         </div>

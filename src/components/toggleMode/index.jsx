@@ -1,6 +1,5 @@
 const ToggleMode = ({ toggleTheme, theme, setModeIcon, modeIcon }) => {
 
-
     const handleChangeIcon = () => {
         setModeIcon((prevState) => {
             return !prevState;
